@@ -6,4 +6,10 @@ module.exports = {
     //     config.output.publicPath = `/TestNextDeploy${config.output.publicPath}`;
     //     return config;
     // },
+    // exportPathMap: async function (defaultPathMap) {
+    //     return {
+    //       '/auth/index.html': { page: '/auth' },
+    //     };
+    //   }
+
 }
