@@ -10,7 +10,7 @@ const AboutPage = () => {
 
     const options: MUIDataTableOptions = {
         filterType: 'dropdown',
-        responsive: 'scrollMaxHeight',
+        responsive: 'vertical',
     }
 
     const data = myJson.records.map(i => {
