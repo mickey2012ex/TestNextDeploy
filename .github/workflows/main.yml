@@ -35,11 +35,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
         
-      # Runs npm install
+      # build application
       - name: npm install 
         run: | 
           npm config set legacy-peer-deps true
           npm i
+          npm run build
+          ls -altr
 
       # deploy to github-page
       - name: Deploy 🚀
