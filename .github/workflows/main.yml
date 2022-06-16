@@ -27,17 +27,17 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: show current location
-        run: pwd
+        run: |
+          pwd
+          ls -altr
 
-      # Runs a set of commands using the runners shell
-      - name: show files in current directory 
-        run: ls -altr
-      
       # Setup nodejs env
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
         
       # Runs npm install
       - name: npm install 
-        run: npm i
+        run: | 
+          npm config set legacy-peer-deps true
+          npm i
       
