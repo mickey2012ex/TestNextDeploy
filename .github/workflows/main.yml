@@ -25,6 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      # Runs a single command using the runners shell
+      - name: show current location
+        run: |
+          pwd
+          ls -altr
+
       - name: Official SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v1.1.0
         env:
