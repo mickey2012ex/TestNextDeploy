@@ -40,8 +40,11 @@ jobs:
         run: | 
           npm config set legacy-peer-deps true
           npm i
-          
+
       # deploy to github-page
-      - name: deploy to github-page
-        run: npm run deploy
-      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: out # The folder the action should deploy.
+          
