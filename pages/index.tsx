@@ -76,7 +76,7 @@ const IndexPage: NextPage = () => {
     const options: MUIDataTableOptions = {
         filter: true,
         filterType: 'dropdown',
-        responsive: 'stacked',
+        responsive: 'simple',
         serverSide: true,
         count: count,
         page: page,
