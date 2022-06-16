@@ -40,4 +40,8 @@ jobs:
         run: | 
           npm config set legacy-peer-deps true
           npm i
+          
+      # deploy to github-page
+      - name: deploy to github-page
+        run: npm run deploy
       
